@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Zaytoun — Levantine Restaurant</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&family=Mada:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<a class="skip-link" href="#main">Skip to content</a>
+
+<!-- SITE HEADER -->
+<header class="site-header">
+  <div class="wrap header-inner">
+    <a href="#home" class="logo"><span class="logo-mark"><i class="fa-solid fa-leaf"></i></span>Zaytoun</a>
+    <nav class="main-nav" aria-label="Primary">
+      <input type="checkbox" id="nav-toggle" class="nav-toggle-input">
+      <label for="nav-toggle" class="nav-toggle"><span></span><span></span><span></span><span class="sr-only">Menu</span></label>
+      <ul id="nav-list">
+        <li><a href="#home" class="current">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#menu">Menu</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li class="nav-cta-item"><a href="#contact" class="nav-cta">Reserve a table</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+
+  <!-- ================= HOME SECTION ================= -->
+  <section id="home">
+    <!-- HERO -->
+    <section class="hero">
+      <div class="wrap hero-grid">
+        <div class="hero-copy">
+          <span class="eyebrow">زيتون — a taste of home</span>
+          <h1>Levantine cooking, the way our grandmothers made it.</h1>
+          <p class="hero-lead">Zaytoun serves the dishes of Palestine and the wider Levant — slow-cooked, generously spiced, and built around olive oil, bread, and a table meant to be shared.</p>
+          <div class="hero-actions">
+            <a href="#menu" class="btn btn-primary">See the menu</a>
+            <a href="#contact" class="btn btn-ghost">Reserve a table</a>
+          </div>
+          <div class="hero-stats">
+            <div><strong>1998</strong><span>the year the family kitchen opened</span></div>
+            <div><strong>100%</strong><span>cold-pressed olive oil, house pressed</span></div>
+            <div><strong>daily</strong><span>fresh taboon bread, baked to order</span></div>
+          </div>
+        </div>
+        <div class="hero-media">
+          <img src="images/hero-mezze.jpg" alt="A spread of Levantine mezze dishes on a wooden table">
+        </div>
+      </div>
+    </section>
+
+    <!-- MENU PREVIEW -->
+    <section class="section">
+      <div class="wrap">
+        <span class="eyebrow center">On the table tonight</span>
+        <div class="branch-divider" aria-hidden="true">
+          <svg viewBox="0 0 200 40"><line x1="0" y1="20" x2="200" y2="20" stroke="#B5602F" stroke-width="1"/><circle cx="100" cy="20" r="4" fill="#5B6B43"/><circle cx="80" cy="14" r="3" fill="#5B6B43"/><circle cx="120" cy="26" r="3" fill="#5B6B43"/><circle cx="60" cy="24" r="2.5" fill="#5B6B43"/><circle cx="140" cy="16" r="2.5" fill="#5B6B43"/></svg>
+        </div>
+        <h2 class="section-title center">A few house favorites</h2>
+        <div class="card-grid">
+          <article class="card">
+            <img src="images/hummus.jpg" alt="Bowl of hummus topped with olive oil and paprika">
+            <div class="card-body">
+              <h3>Hummus &amp; Mezze</h3>
+              <p>House-made hummus, moutabal, and warm taboon bread — the start of every good meal here.</p>
+            </div>
+          </article>
+          <article class="card">
+            <img src="images/musakhan.jpg" alt="Musakhan chicken with sumac and onions on flatbread">
+            <div class="card-body">
+              <h3>Musakhan</h3>
+              <p>Roasted chicken over taboon bread, layered with sumac, caramelized onion, and toasted almonds.</p>
+            </div>
+          </article>
+          <article class="card">
+            <img src="images/knafeh.jpg" alt="Knafeh dessert with pistachio topping">
+            <div class="card-body">
+              <h3>Knafeh</h3>
+              <p>Warm, cheese-filled knafeh finished with orange blossom syrup and crushed pistachio.</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT TEASER -->
+    <section class="section" style="background:var(--cream-2);">
+      <div class="wrap story-grid">
+        <div class="story-media">
+          <img src="images/restaurant-interior.jpg" alt="Interior of Zaytoun restaurant dining room">
+        </div>
+        <div class="story-copy">
+          <span class="eyebrow">our story</span>
+          <h2>A family recipe book, turned into a restaurant.</h2>
+          <p>Zaytoun began as Sunday lunches at a family table — recipes passed down with no written measurements, only memory. In 1998 we opened the doors so the neighborhood could pull up a chair too.</p>
+          <a href="#about" class="btn btn-ghost">Read our full story</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- VALUES -->
+    <section class="section">
+      <div class="wrap">
+        <span class="eyebrow center">what we stand by</span>
+        <h2 class="section-title center">Three things we never shortcut</h2>
+        <div class="values-grid">
+          <div class="value">
+            <div class="value-icon"><i class="fa-solid fa-wheat-awn"></i></div>
+            <h3>Bread, baked daily</h3>
+            <p>Taboon bread made fresh each morning — never trucked in, never frozen.</p>
+          </div>
+          <div class="value">
+            <div class="value-icon"><i class="fa-solid fa-oil-can"></i></div>
+            <h3>Our own olive oil</h3>
+            <p>Pressed from our family grove and used in nearly everything we serve.</p>
+          </div>
+          <div class="value">
+            <div class="value-icon"><i class="fa-solid fa-people-roof"></i></div>
+            <h3>Built for sharing</h3>
+            <p>Dishes are sized for the table, not the plate — the way we grew up eating.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="section" style="padding-top:0;">
+      <div class="wrap">
+        <div class="specials-banner">
+          <div>
+            <span class="badge">Tonight's special</span>
+            <h2>Maqluba — upside-down rice, lamb, and roasted vegetables</h2>
+            <p>Served family-style, prepared fresh each evening while it lasts.</p>
+          </div>
+          <a href="#menu" class="btn btn-light">View the full menu</a>
+        </div>
+      </div>
+    </section>
+  </section>
+
+
+  <!-- ================= ABOUT SECTION ================= -->
+  <section id="about">
+    <section class="page-hero">
+      <div class="wrap">
+        <span class="eyebrow center">our story</span>
+        <h1>From a family table to a neighborhood restaurant.</h1>
+        <p>Twenty-six years of the same recipes, the same olive grove, and a lot more chairs.</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="wrap story-grid">
+        <div class="story-media">
+          <img src="images/olive-grove.jpg" alt="Olive grove at golden hour">
+        </div>
+        <div class="story-copy">
+          <span class="eyebrow">1998</span>
+          <h2>It started with Sunday lunch.</h2>
+          <p>Long before Zaytoun had a name, it was a table our grandmother set every Sunday — maqluba, musakhan, whatever the season gave us. Neighbors started showing up uninvited, and eventually we stopped pretending it wasn't a restaurant.</p>
+          <p>We opened officially in 1998, in the same neighborhood, using the same recipes, measured the same way — by hand, by taste, by memory.</p>
+        </div>
+      </div>
+    </section>
+
+    <div class="branch-divider" aria-hidden="true">
+      <svg viewBox="0 0 200 40"><line x1="0" y1="20" x2="200" y2="20" stroke="#B5602F" stroke-width="1"/><circle cx="100" cy="20" r="4" fill="#5B6B43"/><circle cx="80" cy="14" r="3" fill="#5B6B43"/><circle cx="120" cy="26" r="3" fill="#5B6B43"/><circle cx="60" cy="24" r="2.5" fill="#5B6B43"/><circle cx="140" cy="16" r="2.5" fill="#5B6B43"/></svg>
+    </div>
+
+    <section class="section" style="background:var(--cream-2); padding-top:56px;">
+      <div class="wrap story-grid">
+        <div class="story-copy">
+          <span class="eyebrow">the grove</span>
+          <h2>Our olive oil comes from our own trees.</h2>
+          <p>Every autumn the family still travels back to press the season's olives ourselves. It's the oil that finishes almost every dish that leaves our kitchen — on the hummus, in the taboon dough, drizzled over the knafeh syrup.</p>
+          <p>It's slower than buying it wholesale. We've never found a reason to change it.</p>
+        </div>
+        <div class="story-media">
+          <img src="images/olive-oil.jpg" alt="Bottles of fresh olive oil">
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="wrap">
+        <span class="eyebrow center">what guides us</span>
+        <h2 class="section-title center">The short version of how we cook</h2>
+        <div class="values-grid">
+          <div class="value">
+            <div class="value-icon"><i class="fa-solid fa-book-open"></i></div>
+            <h3>Family recipes</h3>
+            <p>Nothing on the menu wasn't cooked in our own kitchen first.</p>
+          </div>
+          <div class="value">
+            <div class="value-icon"><i class="fa-solid fa-fire-burner"></i></div>
+            <h3>Slow, not fast</h3>
+            <p>Maqluba and musakhan take hours — we start them well before we open.</p>
+          </div>
+          <div class="value">
+            <div class="value-icon"><i class="fa-solid fa-utensils"></i></div>
+            <h3>Made for the table</h3>
+            <p>Portions are built for sharing, the way every meal at home was.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" style="background:var(--cream-2);">
+      <div class="wrap">
+        <span class="eyebrow center">in the kitchen</span>
+        <h2 class="section-title center">The people behind the table</h2>
+        <div class="team-grid">
+          <div class="team-member">
+            <img src="images/chef-layla.jpg" alt="Portrait of Zaytoun's head chef">
+            <h3>Layla Awad</h3>
+            <span>Head chef, keeper of the recipes</span>
+          </div>
+          <div class="team-member">
+            <img src="images/baker-omar.jpg" alt="Portrait of Zaytoun's bread baker">
+            <h3>Omar Nasser</h3>
+            <span>Taboon &amp; bread, mornings only</span>
+          </div>
+          <div class="team-member">
+            <img src="images/manager-hana.jpg" alt="Portrait of Zaytoun's floor manager">
+            <h3>Hana Yousef</h3>
+            <span>Floor manager, since 2006</span>
+          </div>
+        </div>
+      </div>
+    </section>
+  </section>
+
+
+  <!-- ================= MENU SECTION ================= -->
+  <section id="menu">
+    <section class="page-hero">
+      <div class="wrap">
+        <span class="eyebrow center">the menu</span>
+        <h1>Dishes meant to be shared across the table.</h1>
+        <p>Prices include tax. Ask your server about tonight's chef special — it changes daily.</p>
+      </div>
+    </section>
+
+    <section class="section" style="padding-bottom:0;">
+      <div class="wrap">
+
+        <div class="specials-banner">
+          <div>
+            <span class="badge">Tonight's special</span>
+            <h2>Maqluba — upside-down rice, lamb, and roasted vegetables</h2>
+            <p>Prepared fresh each evening, while it lasts — $22</p>
+          </div>
+          <a href="#contact" class="btn btn-light">Reserve a table</a>
+        </div>
+
+        <div class="menu-category">
+          <h2>Mezze &amp; Starters</h2>
+          <div class="menu-list">
+            <div class="menu-item"><div><div class="menu-item-name">Hummus</div><div class="menu-item-desc">Chickpea purée, tahini, house olive oil</div></div><div class="menu-item-price">$6</div></div>
+            <div class="menu-item"><div><div class="menu-item-name">Moutabal</div><div class="menu-item-desc">Smoked eggplant, tahini, pomegranate seeds</div></div><div class="menu-item-price">$6.50</div></div>
+            <div class="menu-item"><div><div class="menu-item-name">Warak Enab</div><div class="menu-item-desc">Grape leaves stuffed with rice and herbs</div></div><div class="menu-item-price">$8</div></div>
+            <div class="menu-item"><div><div class="menu-item-name">Fattoush</div><div class="menu-item-desc">Toasted bread salad, sumac, pomegranate molasses</div></div><div class="menu-item-price">$7.50</div></div>
+            <div class="menu-item"><div><div class="menu-item-name">Falafel <span class="tag">chef's pick</span></div><div class="menu-item-desc">Herbed chickpea fritters, tahini sauce</div></div><div class="menu-item-price">$7</div></div>
+            <div class="menu-item"><div><div class="menu-item-name">Taboon Bread</div><div class="menu-item-desc">Baked fresh to order, za'atar or plain</div></div><div class="menu-item-price">$3</div></div>
+          </div>
+        </div>
+
+        <div class="menu-category">
+          <h2>Mains</h2>
+          <div class="menu-list">
+            <div class="menu-item"><div><div class="menu-item-name">Musakhan</div><div class="menu-item-desc">Sumac roasted chicken, caramelized onion, taboon bread</div></div><div class="menu-item-price">$18</div></div>
+            <div class="menu-item"><div><div class="menu-item-name">Maqluba <span class="tag">house favorite</span></div><div class="menu-item-desc">Upside-down rice, lamb, roasted vegetables</div></div><div class="menu-item-price">$22</div></div>
+            <div class="menu-item"><div><div class="menu-item-name">Mansaf</div><div class="menu-item-desc">Lamb in fermented yogurt sauce, over rice</div></div><div class="menu-item-price">$24</div></div>
+            <div class="menu-item"><div><div class="menu-item-name">Mixed Grill</div><div class="menu-item-desc">Kofta, shish taouk, and lamb skewers</div></div><div class="menu-item-price">$21</div></div>
+            <div class="menu-item"><div><div class="menu-item-name">Freekeh with Chicken</div><div class="menu-item-desc">Smoked green wheat, slow-braised chicken</div></div><div class="menu-item-price">$19</div></div>
+            <div class="menu-item"><div><div class="menu-item-name">Stuffed Zucchini</div><div class="menu-item-desc">Rice and herbs, tomato-garlic broth</div></div><div class="menu-item-price">$16</div></div>
+          </div>
+        </div>
+
+        <div class="menu-category">
+          <h2>Desserts</h2>
+          <div class="menu-list">
+            <div class="menu-item"><div><div class="menu-item-name">Knafeh <span class="tag">chef's pick</span></div><div class="menu-item-desc">Cheese pastry, orange blossom syrup, pistachio</div></div><div class="menu-item-price">$8</div></div>
+            <div class="menu-item"><div><div class="menu-item-name">Baklava</div><div class="menu-item-desc">Layered filo, walnut, rosewater syrup</div></div><div class="menu-item-price">$6.50</div></div>
+            <div class="menu-item"><div><div class="menu-item-name">Mahalabia</div><div class="menu-item-desc">Milk pudding, rosewater, crushed pistachio</div></div><div class="menu-item-price">$5.50</div></div>
+          </div>
+        </div>
+
+        <div class="menu-category">
+          <h2>Drinks</h2>
+          <div class="menu-list">
+            <div class="menu-item"><div><div class="menu-item-name">Mint Lemonade</div><div class="menu-item-desc">Fresh mint, lemon, lightly sweetened</div></div><div class="menu-item-price">$4.50</div></div>
+            <div class="menu-item"><div><div class="menu-item-name">Arabic Coffee</div><div class="menu-item-desc">Cardamom, served in a small cup</div></div><div class="menu-item-price">$3.50</div></div>
+            <div class="menu-item"><div><div class="menu-item-name">Karkade</div><div class="menu-item-desc">Chilled hibiscus tea</div></div><div class="menu-item-price">$4</div></div>
+            <div class="menu-item"><div><div class="menu-item-name">Mint Tea</div><div class="menu-item-desc">Fresh mint, steeped black tea</div></div><div class="menu-item-price">$3.50</div></div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+  </section>
+
+
+  <!-- ================= CONTACT SECTION ================= -->
+  <section id="contact">
+    <section class="page-hero">
+      <div class="wrap">
+        <span class="eyebrow center">find us</span>
+        <h1>Come hungry, or write ahead.</h1>
+        <p>We hold tables for groups of six or more with a day's notice.</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="wrap contact-grid">
+        <div class="contact-copy">
+          <span class="eyebrow">get in touch</span>
+          <h2>We're easiest to reach in the afternoon.</h2>
+          <p>For reservations, private events, or catering, call or send a message — we reply between lunch and dinner service.</p>
+
+          <ul class="contact-info-list">
+            <li><i class="fa-solid fa-location-dot"></i><div><h4>Address</h4><p>12 Olive Grove Street, Old Town</p></div></li>
+            <li><i class="fa-solid fa-phone"></i><div><h4>Phone</h4><p>(555) 022-7714</p></div></li>
+            <li><i class="fa-solid fa-envelope"></i><div><h4>Email</h4><p>hello@zaytoun-restaurant.com</p></div></li>
+          </ul>
+
+          <!-- معلومات السوشيال ميديا الإضافية داخل قسم التواصل -->
+          <div class="social-channels-box" style="margin-top: 24px; padding: 16px; background: var(--cream-2); border-radius: 8px;">
+            <h4 style="margin-bottom: 10px; color: var(--primary);">Social Channels & Community</h4>
+            <p style="margin-bottom: 8px; font-size: 0.95rem;"><i class="fa-brands fa-instagram" style="margin-right: 8px; color: var(--accent);"></i><strong>Instagram:</strong> @zaytoun.restaurant (Daily specials & stories)</p>
+            <p style="margin-bottom: 8px; font-size: 0.95rem;"><i class="fa-brands fa-facebook-f" style="margin-right: 8px; color: var(--accent);"></i><strong>Facebook:</strong> Zaytoun Levantine Kitchen</p>
+            <p style="font-size: 0.95rem;"><i class="fa-brands fa-whatsapp" style="margin-right: 8px; color: var(--accent);"></i><strong>WhatsApp:</strong> (555) 022-7715 (Direct table orders)</p>
+          </div>
+
+          <table class="hours-table" style="margin-top: 24px;">
+            <tr><td>Monday – Thursday</td><td>12:00 – 22:00</td></tr>
+            <tr><td>Friday – Saturday</td><td>12:00 – 23:00</td></tr>
+            <tr><td>Sunday</td><td>13:00 – 21:00</td></tr>
+          </table>
+        </div>
+
+        <form class="contact-form" onsubmit="return false;">
+          <label for="name">Name</label>
+          <input id="name" type="text" placeholder="Your name" required>
+          <label for="email">Email</label>
+          <input id="email" type="email" placeholder="you@example.com" required>
+          <label for="party">Reason for writing</label>
+          <select id="party">
+            <option>Table reservation</option>
+            <option>Private event</option>
+            <option>Catering</option>
+            <option>General question</option>
+          </select>
+          <label for="message">Message</label>
+          <textarea id="message" rows="5" placeholder="Party size, date, and time if this is a reservation" required></textarea>
+          <button type="submit" class="btn btn-primary">Send message zaytoun</button>
+        </form>
+      </div>
+
+      <div class="wrap">
+        <div class="map-embed"><span><i class="fa-solid fa-map-location-dot"></i>&nbsp; 12 Olive Grove Street, Old Town</span></div>
+      </div>
+    </section>
+  </section>
+
+</main>
+
+<!-- SITE FOOTER -->
+<footer class="site-footer">
+  <div class="wrap footer-grid">
+    <div>
+      <a href="#home" class="logo"><span class="logo-mark"><i class="fa-solid fa-leaf"></i></span>Zaytoun</a>
+      <p>Levantine home cooking, served family-style since 1998.</p>
+    </div>
+    <div>
+      <h4>Explore</h4>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#menu">Menu</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+    <div>
+      <h4>Visit</h4>
+      <ul><li>12 Olive Grove Street</li><li>Open 12pm – 11pm daily</li></ul>
+    </div>
+    <div>
+      <h4>Follow</h4>
+      <div class="social-row">
+        <a href="#contact" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+        <a href="#contact" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+        <a href="#contact" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+      </div>
+    </div>
+  </div>
+  <div class="wrap footer-bottom"><p>&copy; 2026 Zaytoun Restaurant. All rights reserved.</p></div>
+</footer>
+
+</body>
+</html>
