@@ -43,8 +43,6 @@ export default function Header() {
               </li>
             </ul>
           </nav>
-
-          {/* روابط المشروع (brief) والأدمن */}
           <Navbar />
         </div>
       </div>

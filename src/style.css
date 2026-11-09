@@ -48,8 +48,8 @@ p { margin: 0 0 1em; }
 
 .wrap { max-width: var(--wrap); margin: 0 auto; padding: 0 24px; }
 .sr-only { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); }
-.skip-link { position: absolute; left: -999px; top: 0; background: var(--ink); color: var(--cream); padding: 10px 16px; z-index: 100; }
-.skip-link:focus { left: 12px; top: 12px; border-radius: 6px; }
+.skip-link { position: fixed; inset-inline-start: 12px; top: 0; transform: translateY(-150%); background: var(--ink); color: var(--cream); padding: 10px 16px; z-index: 100; }
+.skip-link:focus { top: 12px; transform: translateY(0); border-radius: 6px; }
 
 a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visible, summary:focus-visible {
   outline: 3px solid var(--clay); outline-offset: 2px;
@@ -117,7 +117,7 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
 .hero-media { position: relative; }
 .hero-media img { border-radius: var(--radius); box-shadow: var(--shadow); }
 .hero-stats { display: flex; gap: 36px; margin-top: 28px; flex-wrap: wrap; }
-.hero-stats div { text-align: left; }
+.hero-stats div { text-align: start; }
 .hero-stats strong { font-family: var(--font-display); font-size: 1.7rem; display: block; color: var(--clay); }
 .hero-stats span { font-size: 0.85rem; color: var(--warm-gray); }
 
@@ -160,7 +160,7 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
 .menu-item { display: flex; justify-content: space-between; gap: 16px; padding-bottom: 14px; border-bottom: 1px dashed var(--cream-2); transition: transform 0.15s ease; }
 .menu-item:hover { transform: translateX(4px); }
 .menu-item-name { font-weight: 700; }
-.menu-item-name span.tag { font-family: var(--font-display); font-style: italic; color: var(--olive); font-size: 0.95rem; margin-left: 6px; }
+.menu-item-name span.tag { font-family: var(--font-display); font-style: italic; color: var(--olive); font-size: 0.95rem; margin-inline-start: 6px; }
 .menu-item-desc { color: var(--warm-gray); font-size: 0.88rem; margin-top: 2px; }
 .menu-item-price { font-family: var(--font-display); color: var(--clay); white-space: nowrap; font-size: 1.15rem; }
 
@@ -248,7 +248,7 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
 
 .hours-table { width: 100%; margin-top: 24px; border-collapse: collapse; }
 .hours-table td { padding: 6px 0; border-bottom: 1px solid var(--cream-2); font-size: 0.92rem; }
-.hours-table td:last-child { text-align: right; color: var(--clay); font-weight: 700; }
+.hours-table td:last-child { text-align: end; color: var(--clay); font-weight: 700; }
 
 .contact-form { background: var(--white); border: 1px solid var(--cream-2); border-radius: var(--radius); padding: 36px; display: flex; flex-direction: column; }
 .contact-form label { font-size: 0.85rem; font-weight: 700; margin-bottom: 6px; margin-top: 16px; }
@@ -384,13 +384,6 @@ p, .card-body p, .contact-info-list p, .site-footer p { font-size: max(16px, 1re
     opacity: 1;
     visibility: visible;
     transform: translateY(0);
-  }
-
-  .header-end > .admin-toggle {
-    grid-column: 1 / -1;
-    grid-row: 2;
-    justify-self: end;
-    min-height: 44px;
   }
 
   .hero-grid,
@@ -825,5 +818,51 @@ p, .card-body p, .contact-info-list p, .site-footer p { font-size: max(16px, 1re
   .dashboard-panel-heading h2,
   .qr-panel h2 {
     font-size: 1.4rem;
+  }
+}
+
+/* ============================================
+   إضافات responsive
+   ============================================ */
+
+/* شاشات كبيرة (لابتوب كبير / مونيتور) */
+@media (min-width: 1440px) {
+  :root { --wrap: 1280px; }
+  .section { padding: 112px 0; }
+}
+
+/* قائمة الطعام: عمود واحد بدل عمودين */
+@media (max-width: 900px) {
+  .menu-list {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 16px;
+  }
+  .menu-item { min-width: 0; }
+  .menu-item-name { overflow-wrap: anywhere; }
+}
+
+/* تابلت عمودي فقط (641px - 768px) */
+@media (min-width: 641px) and (max-width: 768px) {
+  .values-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .section { padding-block: 72px; }
+  .specials-banner { padding: 28px; }
+  .footer-grid { gap: 28px; }
+}
+
+/* موبايل بالوضع الأفقي */
+@media (max-height: 480px) and (orientation: landscape) {
+  .hero,
+  .page-hero { padding-block: 24px; }
+  #nav-list { max-height: calc(100dvh - 64px); }
+}
+
+/* أجهزة اللمس: بلا hover يعلق */
+@media (hover: none) {
+  .card:hover,
+  .value:hover,
+  .btn:hover,
+  .menu-item:hover,
+  .admin-toggle:hover {
+    transform: none;
   }
 }
